@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212429"
+    tools:context=".kalkulator">
+
+    <ImageView
+        android:id="@+id/alok"
+        android:layout_width="335dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/alok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kalkulator"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        android:text="KALKULATOR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alok" />
+
+    <EditText
+        android:id="@+id/idtangka1"
+        android:inputType="number"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="17dp"
+        android:hint="angka 1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/idtangka2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kalkulator" />
+
+    <EditText
+        android:id="@+id/idtangka2"
+        android:inputType="number"
+        android:layout_width="174dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:hint="angka 2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/idtangka1"
+        app:layout_constraintTop_toBottomOf="@id/kalkulator" />
+
+    <Spinner
+        android:id="@+id/spinnerpilih"
+        android:layout_width="312dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/pilihan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtangka1" />
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:text="hasil"
+        android:textSize="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerpilih" />
+
+    <Button
+        android:id="@+id/btnhitung"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="hasil"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txthasil"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

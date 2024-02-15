@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConstraintAPP</string>
+    <string-array name="pilihan">
+        <item>tambah</item>
+        <item>kurang</item>
+        <item>kali</item>
+        <item>bagi</item>
+    </string-array>
+</resources>
